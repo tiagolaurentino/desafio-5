@@ -1,116 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=h, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
-<link rel="shortcut icon" href="../desafio-5/images/favicon-32x32.png" type="image/x-icon">
-    <title>Desafio 5</title>
-    <style>
-        /* font-family: 'Kumbh Sans', sans-serif; */
-        * {
-            padding: 0px;
-            margin: 0px;
-        }
-        html, body {
-            width: 100vw;
-            height: 100vh;
-            background-color: rgb(49, 41, 41);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .container {
-           background-image: url(../desafio-5/images/bg-pattern-top.svg), url(../desafio-5/images/bg-pattern-bottom.svg);
-           
-            background-repeat: no-repeat;
-            background-position: bottom 50vh right 50vw, top 40vh left 50vw;
-            background-color: darkcyan;
-            width: 100vw;
-            height: 570px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-        }
-                section  {
-                background-color: white;
-                width: 305px;
-                height: 330px;
-                border-radius: 15px;
-                position: relative;    
-                }
-                img {
-                    border-radius: 50px;
-                    position: absolute;
-                    bottom: 165px;
-                }
-               .img {
-                height: 120px;
-                background-image: url(../desafio-5/images/bg-pattern-card.svg);
-                border-radius: 15px 15px 0px 0px;
-               } 
-           
-         h1, #conteudo, .img {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .conteudo {
-            display: inline-flex;
-            display: flex;
-            justify-content:space-around;
-            padding-top: 25px;
-            border-top: 1px solid rgba(214, 204, 204, 0.384);
-        }
-        h1 {
-            padding-top: 60px;
-            font-family: 'Kumbh Sans', sans-serif;
-            font-weight: 700;
-            font-size: 18px;
-        }
-        #conteudo {
-            padding-top: 5px;
-            padding-bottom: 15px;
-        }
-        .numero {
-            font-family: 'Kumbh Sans', sans-serif;
-            font-size: 18px;
-            font-weight: 700;
-        }
-        p {
-            font-family: 'Kumbh Sans', sans-serif;
-            font-size: 12px;
-            font-weight: 400;
-            color: hsl(229, 23%, 23%);
-        }
-        span {
-            font-family: 'Kumbh Sans', sans-serif;
-            font-size: 17px;
-            font-weight: 400;
-            padding-left: 7px;
-            color: hsl(229, 23%, 23%);
-        }
-    </style>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Profile card component</title>
 
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+    html, body {
+        background-color: black;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main {
+        background-color: aqua;
+        height: 500px;
+        width: 95vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    div.img{    
+        background-image: url(../desafio-5/images/bg-pattern-card.svg);
+        width: 320px;
+        height: 130px;
+        border-radius: 15px 15px 0px 0px;
+    }
+    img {
+        position: absolute;
+        border-radius: 50%;
+        bottom: 176px;
+        left: 115px;
+    }
+    section {
+        position: relative;
+        background-color: white;
+        width: 320px;
+        height: 355px;
+      text-align: center;
+      border-radius: 15px;
+    }
+    div.conteudo {
+        display: flex;
+        justify-content: space-around;
+   }
+   h1 {
+    padding-top: 68px;
+    padding-bottom: 11px;
+   }
+   div.conteudo {
+    border-top: 1px solid rgba(128, 128, 128, 0.459);
+    display: flex;
+    padding-top: 13px;
+   }
+   p.nome {
+    padding-bottom: 25px;
+   }
+    div.numero {
+        display: inline-block ;
+       display: block;
+       padding: ;
+  }
+  </style>
+</head>
 <body>
-    <main class="container">
-
-        <section>
-         <div class="img"><img src="../desafio-5/images/image-victor.jpg" alt=""> </div>
-            <h1>Victor Crest <span>26</span></h1>
-            <p id="conteudo">London</p>
-            <div class="conteudo">
-                <div class="numero">80K <p>Followers</p></div>
-                <div class="numero">803k <p>Likes</p></div>
-                <div class="numero">1.4k <p>Photos</p></div>
-            </div>
-        
-            
-        </section>
-    </main>
+  <main>
+      <section>
+        <div class="img"> <img src="../desafio-5/images/image-victor.jpg" alt=""></div>
+          <h1>
+              Victor Crest
+              <span>26</span>
+          </h1>
+          <p class="nome">London</p>
+          <div class="conteudo">
+              <div class="numero">
+                  80K
+                  <p>Followers</p>
+              </div>
+              <div class="numero">
+                803K
+                 <p>
+                    Likes
+                  </p>
+              </div>
+              <div class="numero">
+                1.4K
+                  <p>
+                      Photos
+                  </p>
+              </div>
+          </div>
+      </section>
+  </main>
 </body>
 </html>
